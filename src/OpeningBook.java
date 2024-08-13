@@ -1,5 +1,9 @@
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
+
 import backstage.Board;
-import java.util.*;
 
 public class OpeningBook {
     private final Map<String, BookMove[]> movesByPosition;
@@ -22,7 +26,7 @@ public class OpeningBook {
 
             for (int moveIndex = 0; moveIndex < bookMoves.length; moveIndex++) {
                 String[] moveData = allMoveData[moveIndex].split(" ");
-                bookMoves[moveIndex] = new BookMove(moveData[0], Integer.parseInt(moveData[1]));
+                bookMoves[moveIndex] = new BookMove(moveData[0], Integer.parseInt(moveData[1].trim()));
             }
 
             movesByPosition.put(positionFen, bookMoves);
