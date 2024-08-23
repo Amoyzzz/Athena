@@ -28,6 +28,7 @@ public class Athena {
     // private static Move tempBestMove;
     //private static final int DEPTH_USED = 8;
     private static OpeningBook openingBook;
+    @SuppressWarnings("unused")
     private static int tcounter = 0;
 
     private static int depthAt = 0;
@@ -36,6 +37,7 @@ public class Athena {
     private static final HashMap<Long, Integer> transpositions = new HashMap<>();
 
     public static boolean searchCutOff = false;
+    @SuppressWarnings("unused")
     private static List<Move> bestMovesMap = new ArrayList<>();
     public Athena(){
         initTables();
@@ -77,6 +79,7 @@ public class Athena {
     }
 
     public static Move bestMove(Board board) {
+        @SuppressWarnings("unused")
         long startTime = System.currentTimeMillis();
         Move bestMove = null;
         double maxScore = -INFINITY;
@@ -150,7 +153,7 @@ public class Athena {
             depth++;
             depthAt++;
         }
-        System.out.println("Reached Depth of - " + depth + " with score - " + score + " With move" + testMove);
+        System.out.println("info depth " + depth + " score " + score + " move " + testMove);
         return score;
 
     }
@@ -416,6 +419,7 @@ public class Athena {
         };
     }
 
+    @SuppressWarnings("unused")
     private static int MoveValue(Board board, Move move) {
 
         int moveScoreGuess = 0;

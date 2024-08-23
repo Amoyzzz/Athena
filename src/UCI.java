@@ -3,7 +3,8 @@ import backstage.move.Move;
 import java.util.*;
 
 public class UCI {
-    static String ENGINENAME = "Athena v1_Fabiano";
+    static String ENGINENAME = "Athena V1_Fabiano";
+    @SuppressWarnings("unused")
     private static Athena a;
     private static Board board;
 
@@ -28,6 +29,7 @@ public class UCI {
             } else if (inputString.contains("go")) {
                 inputGo();
             } else if ("quit".equals(inputString)) {
+                input.close();
                 System.exit(0);
             }
         }
@@ -77,18 +79,12 @@ public class UCI {
                 board.doMove(move);
             }
         }
-        // Print the updated board state
-        System.out.println(board);
     }
 
     public static void inputGo() {
         // search for best move
         Move bestMove = Athena.bestMove(board);
-        System.out.println(board);
         board.doMove(bestMove);
-        // a.setBoard(board);
         System.out.println("bestmove " + bestMove.toString());
-
-        System.out.println(board);
     }
 }
