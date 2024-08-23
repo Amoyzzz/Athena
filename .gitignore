@@ -2,3 +2,4 @@
 *.jar
 .settings
 settings.json
+*.gitignore
