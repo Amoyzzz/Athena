@@ -14,11 +14,13 @@
  `--'  `"   `'-'  '---'   '---'                  '--'   '--' `--'  `"                                          
 ```
 
-Athena V1_Fabiano
+<!-- generated using https://patorjk.com/software/taag/#p=display&f=Crazy&t=Athena -->
+
+Athena v1.0.0_Fabiano
 
 Welcome to Athena, a free chess engine made to quickly and efficiently defeat human players and other chess engines. 
 
 
-Developed by [**@Amoyzzz**](github.com/Amoyzzz), [**@Endqrmqn**](github.com/Endqrmqn), and [**@NicholasIGuess**](github.com/NicholasIGuess).
+Developed by [**@NicholasIGuess**](github.com/NicholasIGuess), [**@Amoyzzz**](github.com/Amoyzzz), and [**@Endqrmqn**](github.com/Endqrmqn).
 
 Uses [bhlangonijr/chesslib](github.com/bhlangonijr/chesslib) for backend move generation.
