@@ -1,5 +1,4 @@
-bin
-
+*.class
 *.jar
 .settings
 .vscode
