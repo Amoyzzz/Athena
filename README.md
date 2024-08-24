@@ -15,6 +15,18 @@
 ```
 
 <!-- generated using https://patorjk.com/software/taag/#p=display&f=Crazy&t=Athena -->
+<!-- 
+how to make a release:
+copy every file from bin into a random folder (not in the project directory)
+also copy book.txt into that folder
+open a command prompt window
+run this command: jar cfve Athena.jar Main *
+it should work, and you'll end up with a new jar file (Athena.jar) in that folder
+rename the jar to whatever the current version is (use semantic versioning)
+create a release, and make the tag the same as the current grandmaster corresponding to the major version
+important: DO NOT USE THE BUILT-IN VSCODE EXPORT JAR COMMAND
+this will not bundle book.txt into the jar, which causes errors
+-->
 
 Athena v1.0.0_Fabiano
 
